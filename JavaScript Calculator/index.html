@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer ></script>
+</head>
+<body>
+    <div id="container">
+        <div id="calculator">
+            <input id="screen" type="text">         
+            <!-- <div id="screen" value=" "></div> -->
+            <div class="btns">
+                <div class="line">
+                    <div id="num" onclick="appendToScreen('1')"><p>1</p></div>
+                    <div id="num" onclick="appendToScreen('2')"><p>2</p></div>
+                    <div id="num" onclick="appendToScreen('3')"><p>3</p></div>
+                    <div id="symbol" onclick="appendToScreen('+')"><p>+</p></div>
+                </div>
+                <div class="line">
+                    <div id="num" onclick="appendToScreen('4')"><p>4</p></div>
+                    <div id="num" onclick="appendToScreen('5')"><p>5</p></div>
+                    <div id="num" onclick="appendToScreen('6')"><p>6</p></div>
+                    <div id="symbol" onclick="appendToScreen('-')"><p>-</p></div>
+                </div>
+                <div class="line">
+                    <div id="num" onclick="appendToScreen('7')"><p>7</p></div>
+                    <div id="num" onclick="appendToScreen('8')"><p>8</p></div>
+                    <div id="num" onclick="appendToScreen('9')"><p>9</p></div>
+                    <div id="symbol" onclick="appendToScreen('/')"><p>/</p></div>
+                </div>
+                <div class="line">
+                    <div id="num" onclick="appendToScreen('0')"><p>0</p></div>
+                    <div id="num" onclick="appendToScreen('.')"><p>.</p></div>
+                    <div id="num" onclick="appendToScreen('**')"><p>Sq</p></div>
+                    <div id="symbol" onclick="appendToScreen('%')"><p>%</p></div>
+                </div>
+                <div class="line">
+                    <div id="fn" onclick="calculate()"><p>=</p></div>
+                    <div id="fn" onclick="display.value = display.value.toString().slice(0, -1)"><p>Del</p></div>
+                    <div id="fn" onclick="clearScreen()"><p>Clr</p></div>
+                    <div id="symbol" onclick="appendToScreen('*')"><p>*</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

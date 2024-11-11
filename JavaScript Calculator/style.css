@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+#calculator{
+    width: 500px;
+    height: 530px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+
+    #screen{
+        width: 460px;
+        height: 90px;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: azure;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+    .btns{
+
+        .line{
+            display: flex;
+    
+            #num{
+                background-color: white;
+                width: 100px;
+                height: 60px;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid black;
+                font-size: 30px;
+                font-weight: bold;
+                border-radius: 5px;
+                box-shadow: 10px;
+                cursor: pointer;
+            }
+            #num:hover{
+                background-color: blueviolet;
+            }
+           
+            #fn{
+                background-color: orange;
+                width: 100px;
+                height: 60px;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid black;
+                font-size: 30px;
+                font-weight: bold;
+                border-radius: 5px;
+                box-shadow: 10px;
+                cursor: pointer;
+            }
+            #fn:hover{
+                background-color: blue;
+            }
+
+            #symbol{
+                background-color: red;
+                width: 100px;
+                height: 60px;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid black;
+                font-size: 30px;
+                font-weight: bold;
+                border-radius: 5px;
+                box-shadow: 10px;
+                cursor: pointer;
+            }
+            #symbol:hover{
+                background-color: white;
+            }
+
+            #dot{
+                background-color: white;
+                width: 215px;
+                height: 60px;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid black;
+                font-size: 30px;
+                font-weight: bold;
+                border-radius: 5px;
+                box-shadow: 10px;
+                cursor: pointer;
+            }
+            #dot:hover{
+                background-color: blueviolet;
+            }
+        }
+    }
+}
+
+
+
+
+
